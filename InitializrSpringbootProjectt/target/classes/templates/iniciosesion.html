@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html 
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{layout/layout}">
+    <head th:replace="layout/layout :: head">
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+
+        <!-- Custom styles for this template -->
+        <!-- Core theme CSS (includes Bootstrap)-->
+
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" th:href="@{/assets/favicon.ico}" />
+
+    </head>
+    <body>
+
+        <div class="container-fluid" layout:fragment="page-content">
+
+            <main class="form-signin w-100 m-auto text-center formatomain">
+                <form>
+                    <img class="mb-4" src="../assets/Universidad_de_Alcalá_(2021)_logotipo.png" alt="" width="162" height="57">
+                    <h1 class="h3 mb-3 fw-normal">Bienvenido a App Prácticas</h1>
+
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+                    <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+                </form>
+
+            </main>
+
+        </div>
+
+
+        <!--OTRO SCRIPTS PARA PAGINAS-->
+    <th:block layout:fragment="page-scripts">
+
+    </th:block>
+
+</body>
+</html>

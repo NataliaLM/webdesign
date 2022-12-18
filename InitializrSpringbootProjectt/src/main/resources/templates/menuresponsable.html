@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html 
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{layout/layout}">
+    <head th:replace="layout/layout :: head">
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
+
+        <!-- Custom styles for this template -->
+        <!-- Core theme CSS (includes Bootstrap)-->
+
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" th:href="@{/assets/favicon.ico}" />
+
+    </head>
+    <body>
+
+        <div class="container-fluid" layout:fragment="page-content">
+
+            <main class="form-signinmr w-100 m-auto text-center formatomainmr">
+                <form>
+                    <h2 class="h3 mb-3 fw-normal tarea">¿Qué tarea desea realizar?</h2>
+
+                    <div class="row align-items-md-stretch">
+
+                        <div>
+                            <div class="h-100 p-4 text-bg-dark rounded-3">
+                                <a class="w-100 btn btn-lg btn-primary" type="submit" href="/" role="button">Asignar prácticas</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class=" p-4  ">
+                                <a class="w-100 btn btn-lg btn-primary"  href="/" role="button">Informe de prácticas</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="h-100 p-4 text-bg-dark rounded-3">
+                                <a class="w-100 btn btn-lg btn-primary" type="submit" href="/" role="button">Informe de aplicación</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+
+                        </div>
+
+
+                        <div class="d-flex  flex-sm-row justify-content-between py-4 ">
+                            <p></p>
+                            <div class="h-100 text-bg-dark rounded-3 formatocerrarsesion">
+                                <a class="w-100 btn btn-lg btn-primary " type="submit" href="/" role="button">Cerrar sesión</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </form>  
+
+
+
+            </main> 
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <!--OTRO SCRIPTS PARA PAGINAS-->
+    <th:block layout:fragment="page-scripts">
+
+    </th:block>
+
+</body>
+</html>
